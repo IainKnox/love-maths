@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--font awesome icons-->
+    <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
     <title>Love Maths</title>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,16 +22,16 @@
 
     <div class="game-area">
         <div class="controls-area">
-            <button class="btn btn--big btn--green">
+            <button data-type="addition" class="btn btn--big btn--green">
                 <i class="fas fa-plus"></i>
             </button>
-            <button class="btn btn--big btn-blue">
+            <button data-type="subtract" class="btn btn--big btn-blue">
                 <i class="fas fa-minus"></i>
             </button>
-            <button class="btn btn--big btn--orange">
+            <button data-type="multiply" class="btn btn--big btn--orange">
                 <i class="fas fa-times"></i> 
             </button>
-            <button class="btn btn--big btn-red">
+            <button data-type="division" class="btn btn--big btn-red">
                 <i class="fas fa-divide"></i>
             </button>
         </div>
@@ -42,7 +43,7 @@
             <p class="answer-message">Enter answer:</p>
             <input type="number" id="answer-box">
         </div>
-        <button class="btn btn--gray">Submit Answer</button>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     </div>
 
     <div class="score-area">
